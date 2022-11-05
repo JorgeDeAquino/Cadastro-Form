@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/loginstyle.css">
     <script src="./assets/js/main.js"></script>
-    <title>Cadastro</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <title>login</title>
 </head>
+
 <body>
-    
+    <main>
+        <h2>Login</h2>
+        <form action="">
+            <fieldset>
+
+                <div class="full-box">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuario" data-min-length="3" data-max-length="16">
+                </div>
+
+                <div class="full-box">
+                    <label for="lastname">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                </div>
+
+            </fieldset>
+
+            <div class="btn">
+                <button type="submit"> Login </button>
+            </div>
+        </form>
+
+        <section class="cadastro">
+            <p> Ainda não tem conta? <a href="cadastro.html"> Cadastre-se</a></p>
+        </section>
+
+
+        <footer class="footer">
+            <span>Ou conecte atraves do</span>
+            <div class="conect__google">
+                <div id="buttonDiv"></div> 
+            </div>
+        </footer>
+    </main>
+
+
 </body>
+
 </html>
