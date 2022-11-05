@@ -15,7 +15,7 @@ main {
 }
 
 form {
-    width: 70%;
+    width: 85%;
     min-height: 80vh;
     margin: 1.8rem 0;
     background-color: #f6f7f9;
@@ -26,13 +26,14 @@ form {
 }
 
 fieldset {
-    padding: 0.5rem;
+    padding: 0.3rem 0;
     border: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     color: #3e4345;
+    width: 100%;
 }
 
 legend {
@@ -41,20 +42,11 @@ legend {
     font-weight: 550;
 }
 
-.full-box {
+.full-box,
+.half-box {
     text-align: start;
     flex: 1 1 100%;
     position: relative;
-}
-
-.half-box {
-    text-align: start;
-    flex: 1 1 45%;
-    position: relative;
-}
-
-.spacing {
-    margin-right: 2.5%;
 }
 
 input,
@@ -83,7 +75,6 @@ input {
     border: none;
     border-bottom: 2px solid #90ee90;
     background-color: transparent;
-    padding: 10px;
     font-size: 1.4rem;
     margin-bottom: 40px;
 }
@@ -101,13 +92,15 @@ select:focus {
 }
 
 #agreement {
-    margin-right: 0.3rem;
+    margin-right: 0.1rem;
+    display: inline-block;
+    width: 7%;
 }
 
-#agreement,
 #agreement-label {
+    padding-top: 0.5rem;
     display: inline-block;
-    width: auto;
+    width: 90%;
 }
 
 .btn {
@@ -153,12 +146,11 @@ a {
 
 
 /*Responsividade*/
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 780px) {
+    form {
+        width: 70%;
+    }
 
-    
-}
-
-@media screen and (min-width: 500px) {
     fieldset {
         padding: 0.5rem;
         border: none;
@@ -174,5 +166,23 @@ a {
         flex: 1 1 45%;
         position: relative;
     }
-    
+
+    .spacing {
+        margin-right: 2.5%;
+    }
+
+    #agreement,
+    #agreement-label {
+        display: inline-block;
+        width: auto;
+    }
+
+    select {
+        font-size: 1.4rem;
+        margin-top: 0.1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #90ee90;
+    }
+
 }
