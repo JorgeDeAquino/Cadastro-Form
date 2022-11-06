@@ -1,80 +1,80 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 main {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+    align-items: center;
     background-color: #008080;
     display: flex;
-    align-items: center;
+    height: 100%;
     justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
 form {
-    width: 85%;
-    min-height: 80vh;
-    margin: 1.8rem 0;
     background-color: #f6f7f9;
-    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.44);
-    padding: 1rem;
     border-radius: 10px;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.44);
     color: #3e4345;
+    margin: 1.8rem 0;
+    min-height: 80vh;
+    padding: 1rem;
+    width: 85%;
 }
 
 fieldset {
-    padding: 0.3rem 0;
     border: none;
+    color: #3e4345;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0.3rem 0;
     text-align: center;
-    color: #3e4345;
     width: 100%;
 }
 
 legend {
     font-size: 1.7rem;
-    margin-bottom: 1rem;
     font-weight: 550;
+    margin-bottom: 1rem;
 }
 
 .full-box,
 .half-box {
-    text-align: start;
     flex: 1 1 100%;
     position: relative;
+    text-align: start;
 }
 
 input,
 label,
 select {
+    color: #3e4345;
     display: block;
     outline: none;
     width: 100%;
-    color: #3e4345;
 }
 
 label {
-    font-weight: 700;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 select {
-    font-size: 1.4rem;
-    margin-top: 1.4rem;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #90ee90;
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
 }
 
 input {
+    background-color: transparent;
     border: none;
     border-bottom: 2px solid #90ee90;
-    background-color: transparent;
     font-size: 1.4rem;
     margin-bottom: 40px;
 }
@@ -82,8 +82,8 @@ input {
 input:focus {
     border-color: #008000;
     transition: 1s;
-    transform-origin: left;
     transform: scaleX(1.0);
+    transform-origin: left;
 }
 
 input:focus,
@@ -92,34 +92,34 @@ select:focus {
 }
 
 #agreement {
-    margin-right: 0.1rem;
     display: inline-block;
+    margin-right: 0.1rem;
     width: 7%;
 }
 
 #agreement-label {
-    padding-top: 0.5rem;
     display: inline-block;
+    padding-top: 0.5rem;
     width: 90%;
 }
 
 .btn {
-    width: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 button {
     background-color: #008000;
-    color: #FFF;
     border: none;
-    padding: 0.2rem 2.7rem;
-    font-size: 1.2rem;
     border-radius: 20px;
-    height: 40px;
+    color: #FFF;
     cursor: pointer;
+    font-size: 1.2rem;
+    height: 40px;
     opacity: 0.8;
+    padding: 0.2rem 2.7rem;
 }
 
 button:hover {
@@ -127,10 +127,10 @@ button:hover {
 }
 
 button:active {
-    opacity: 1;
     background-color: rgba(173, 216, 230, 0.4);
-    color: #008000;
     border: 1px solid #008000;
+    color: #008000;
+    opacity: 1;
 }
 
 a {
@@ -139,9 +139,9 @@ a {
 
 .error-validation {
     color: #ff1a1a;
+    font-size: 12px;
     position: absolute;
     top: 57px;
-    font-size: 12px;
 }
 
 
@@ -152,19 +152,19 @@ a {
     }
 
     fieldset {
-        padding: 0.5rem;
         border: none;
+        color: #3e4345;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0.5rem;
         text-align: center;
-        color: #3e4345;
     }
 
     .half-box {
-        text-align: start;
         flex: 1 1 45%;
         position: relative;
+        text-align: start;
     }
 
     .spacing {
@@ -178,11 +178,11 @@ a {
     }
 
     select {
-        font-size: 1.4rem;
-        margin-top: 0.1rem;
         background-color: transparent;
         border: none;
         border-bottom: 2px solid #90ee90;
+        font-size: 1.4rem;
+        margin-top: 0.1rem;
     }
 
 }
