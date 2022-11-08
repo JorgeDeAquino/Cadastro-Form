@@ -1,47 +1,47 @@
-*{
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-	align-items: center;
-	background-color: #008080;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	min-height: 100vh;
+body {
+    align-items: center;
+    background-color: #008080;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
 }
 
 main {
     background: #f6f7f9;
-	border-radius: 10px;
-	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.44);
-	min-height: 70vh;
-	min-width: 45%;
-	padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.44);
+    min-height: 70vh;
+    min-width: 45%;
+    padding: 1rem;
 }
 
-main h2{
+main h2 {
     color: #3e4345;
     font-size: 1.7rem;
-	font-weight: 900;
-	margin-bottom: 0.5rem;
-	position: relative;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    position: relative;
     text-align: center;
 }
 
-main h2::before{
-	background: #008000;
-	border-radius: 10px;
-	bottom: 2px;
-	content: '';
-	height: 4px;
-	left: 35%;
-	position: absolute;
-	width: 12%;
+main h2::before {
+    background: #008000;
+    border-radius: 10px;
+    bottom: 2px;
+    content: '';
+    height: 4px;
+    left: 35%;
+    position: absolute;
+    width: 12%;
 }
 
 form {
@@ -128,7 +128,7 @@ button:active {
 
 .cadastro {
     align-items: center;
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
     color: #3e4345;
     display: flex;
     font-size: 1rem;
@@ -159,19 +159,77 @@ a {
 
 /*Responsividade*/
 @media screen and (min-width: 350px) {
-    main h2::before{
+    main h2::before {
         height: 4px;
         left: 38.5%;
         width: 11%;
     }
-    
+
 }
 
 @media screen and (min-width: 500px) {
-    main h2::before{
+    main h2::before {
         height: 4px;
         left: 42%;
         width: 7.5%;
     }
+}
+
+@media screen and (min-width: 1400px) {
+    main h2::before {
+        height: 4px;
+        left: 44%;
+        width: 5.5%;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 2.3rem;
+        margin-bottom: 1.2rem;
+    }
     
+    input {
+        font-size: 2.1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    button {
+        font-size: 2rem;
+        height: auto;
+        padding: 1rem 3rem;
+    }
+
+    .cadastro, a {
+        font-size: 1.7rem;
+    }
+
+    .footer {
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    main h2::before {
+        height: 4px;
+        left: 45%;
+        width: 4.3%;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+    main h2::before {
+        height: 4px;
+        left: 45.5%;
+        width: 4.3%;
+    }
+
+    main h2 {
+        font-size: 3.5rem;
+    }
+
 }
