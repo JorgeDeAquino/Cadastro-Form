@@ -107,6 +107,7 @@ select:focus {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
     width: 100%;
 }
 
@@ -139,9 +140,23 @@ a {
 
 .error-validation {
     color: #ff1a1a;
-    font-size: 12px;
+    font-size: 1rem;
     position: absolute;
     top: 57px;
+}
+
+.template {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+#errortermos {
+    color: #ff1a1a;
+    font-size: 1rem;
+    margin-top: -4%;
 }
 
 

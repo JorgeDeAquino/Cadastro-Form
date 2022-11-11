@@ -27,13 +27,13 @@
                 <div class="half-box spacing">
                     <label for="password">Senha</label>
                     <input type="password" name="password" id="password"
-                        placeholder="Digite sua senha" data-equal="password">
+                        placeholder="Digite sua senha" data-equal="password" data-required data-password-validate>
                 </div>
 
                 <div class="half-box">
                     <label for="passconfirmation">Confirmação de senha</label>
                     <input type="password" name="passconfirmation" id="passwordconfirmation"
-                        placeholder="Digite novamente sua senha" data-equal="password">
+                        placeholder="Digite novamente sua senha" data-equal="password" data-required data-password-validate>
                 </div>
 
             </fieldset>
@@ -44,13 +44,13 @@
                 <div class="half-box spacing">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required
-                        data-min-length="3" data-max-length="16">
+                        data-min-length="3" data-max-length="16" data-only-letters>
                 </div>
 
                 <div class="half-box">
                     <label for="lastname">Sobrenome</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required
-                        data-only-letters>
+                        data-only-letters data-min-length="3"  data-max-length="16">
                 </div>
 
                 <div class="half-box spacing">
@@ -60,7 +60,7 @@
 
                 <div class="half-box">
                     <label for="sexo"> Sexo: </label>
-                    <select required name="sexo" id="sexo">
+                    <select required="required"  name="sexo" id="sexo">
                         <option disabled selected> Sexo? </option>
                         <option value="feminino"> Feminino </option>
                         <option value="masculino"> Masculino </option>
@@ -74,31 +74,30 @@
 
                 <div class="half-box spacing">
                     <label class="input-label" for="cep">CEP</label>
-                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}[\d]{3}"
-                        required>
+                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP"pattern="[0-9]+"
+                    data-required data-min-length="8" data-max-length="8"  
+                    onkeypress="return onlynumber();">
                 </div>
 
                 <div class="half-box">
                     <label class="input-label" for="logradouro">Logradouro</label>
                     <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro" data-input
-                        disabled required>
+                        disabled>
                 </div>
 
                 <div class="half-box spacing">
                     <label class="input-label" for="numero">Numero</label>
-                    <input name="numero" id="numero" class="input" type="text" placeholder="numero" data-input required>
+                    <input name="numero" id="numero" class="input" type="text" placeholder="numero" data-input data-required>
                 </div>
 
                 <div class="half-box">
                     <label class="input-label" for="cidade">Cidade</label>
-                    <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-input disabled
-                        required>
+                    <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-input disabled>
                 </div>
 
                 <div class="half-box spacing">
                     <label class="input-label" for="bairro">Bairro</label>
-                    <input name="bairro" id="bairro" class="input" type="text" placeholder="bairro" data-input disabled
-                        required>
+                    <input name="bairro" id="bairro" class="input" type="text" placeholder="bairro" data-input disabled>
                 </div>
 
                 <div class="half-box">
@@ -140,14 +139,16 @@
             <div>
                 <input type="checkbox" name="agreement" id="agreement" required>
                 <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+                <p id="errortermos"></p>
             </div>
 
             <div class="btn">
-                <button id="btn-submit" type="submit"> Registrar </button>
+                <button id="btn-submit" class="" type="submit"> Registrar </button>
             </div>
 
         </form>
     </main>
+    <p class="error-validation template"></p>
 </body>
 
 </html>
