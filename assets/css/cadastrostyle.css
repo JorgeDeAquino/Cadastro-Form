@@ -200,4 +200,15 @@ a {
         margin-top: 0.1rem;
     }
 
+    #errortermos {
+        margin-top: -5%;
+    }
+
+}
+@media screen and (min-width: 900px) {
+
+    #errortermos {
+        margin-top: -2%;
+    }
+
 }

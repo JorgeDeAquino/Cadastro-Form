@@ -20,18 +20,20 @@
 
                 <div class="full-box">
                     <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuario" data-min-length="3" data-max-length="16">
+                    <input required type="text" name="usuario" id="usuario" required placeholder="Digite seu usuario" >
+                    <span class="error"></span>
                 </div>
 
                 <div class="full-box">
                     <label for="lastname">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <input required type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <span class="error"></span>
                 </div>
 
             </fieldset>
 
             <div class="btn">
-                <button type="submit"> Login </button>
+                <button id="btn-logar" type="submit"> Login </button>
             </div>
         </form>
 
