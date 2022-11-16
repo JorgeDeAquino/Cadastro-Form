@@ -4,16 +4,9 @@ Deseja conferir como ficou o resultado do projeto? Teste a funcionalidade atrav�
 
 ## **Demonstração Desktop💻⌨🖱**
 <div>
-<img src="readme-img/login-desk.png" height="180px" width="300px">
-<img src="readme-img/cadastro-desk-1.png" height="180px" width="300px"> 
-<img src="readme-img/cadastro-desk-2.png" height="180px" width="300px"> 
-</div>
-
-## **Demonstração Mobile📲🤳📳**
-
-<div>
-<img src="./readme-img/login-mobile.png" height="180px" width="300px">
-<img src="./readme-img/cadastro-mobile.png" height="180px" width="300px"> 
+<img src="readme-img/login-desk.png" height="200px" width="290px">
+<img src="readme-img/cadastro-desk-1.png" height="200px" width="290px"> 
+<img src="readme-img/cadastro-desk-2.png" height="200px" width="290px"> 
 </div>
 
 <h2>Sobre o Projeto:</h2>
